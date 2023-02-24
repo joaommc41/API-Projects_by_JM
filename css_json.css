@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://www.10wallpaper.com/wallpaper/1366x768/1609/Vinyl_gramophone_macro-2016_Music_HD_Wallpaper_1366x768.jpg');
+    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+  }
+
+  .navbar-brand {
+    margin-left: 2rem;
+}
+
+  .titulo {
+    color: white;
+    text-align: center;
+    margin: 2rem;
+    font-size: 45px;
+  }
+
+  p{
+    color: white;
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 20px;
+  }
+
+  .btn-group {
+    margin-left: 49rem;
+  }
+
+  .card {
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    font-size: larger;
+    margin-left: 49.9rem;
+  }
+
+  #comprar{
+    margin-top: 2rem;
+  }
+
+  #nome{
+    font-size: xx-large;
+  }
+
+  #disco{
+    font-size: larger;
+    
+  }
+
+  #preco{
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1rem;
+  }
+
+  #gravadora{
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+
+
+
+  

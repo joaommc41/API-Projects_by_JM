@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans';
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+html {
+    font-size: 100%;
+    position: relative;
+}
+
+body {
+    background-image: url("https://wallpaperaccess.com/full/269413.jpg");
+    background-repeat: no-repeat;
+    background-color: #b3c5e0;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+}
+
+
+
+/* INÍCIO DO HEADER */
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0rem 0rem 10rem;
+}
+
+.logo img {
+    width: 80px;
+    display: flex;
+}
+
+.logo h1 {
+    color: white;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1;
+}
+
+/* BOTÃO VOLTAR */
+.logo .login-button button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(0, 126, 245);
+    margin-top: 0.65rem;
+    cursor: pointer;
+    margin-inline-start: 60rem;
+    text-align: center;
+}
+
+.logo .login-button button a {
+    font-family: 'Josefin Sans';
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* FIM DO HEADER */
+
+
+
+/* INÍCIO DO MAIN (HOME, API) */
+.container {
+    display: inline-flex;
+    margin-top: 14rem;
+    margin-bottom: 1rem;
+}
+
+.container .lado{ 
+    display: flex; 
+    margin-left: 2rem; 
+}
+
+.container .title {
+    width: 50%;
+    font-size: 4.5rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-left: 10rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: -10px -1px 0px rgb(0, 0, 0),
+                 -5px 1px 0px rgb(0, 0, 0),
+                  5px -1px 0px rgb(0, 126, 245),
+                  5px 0px 0px rgb(0, 119, 255);
+}
+
+.texto_quem_somos {
+    margin: -2rem 10rem -3rem -10rem;
+}
+
+.titleAPI {
+    margin: 0rem 0rem 0rem 0rem;
+    margin-top: 0rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 0rem;
+    text-shadow: -5px -1px 0px rgb(0, 0, 0),
+                 -3px 1px 0px rgb(0, 0, 0),
+                  3px -1px 0px rgb(0, 126, 245),
+                  3px 0px 0px rgb(0, 119, 255);
+}
+
+.texto {
+    width: 40%;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    margin-bottom: 14rem;
+    text-align: center;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgb(0, 0, 0),
+                 -1px 1px 0px rgb(0, 0, 0),
+                  1px -1px 0px rgb(0, 126, 245),
+                  1px 0px 0px rgb(0, 119, 255);
+    
+}
+
+/* IMAGEM */
+.container .imgAPI {
+    position: relative;
+    width: 10%;
+    margin: 0rem 3rem 0rem -10rem;
+}
+
+.imgAPI {
+	max-width: 640px;
+	transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(30px);
+	}
+	50% {
+		transform: translatey(-30px);
+	}
+	100% {
+		transform: translatey(30px);
+	}
+}
+
+/* BOTÃO */
+.botao button {
+    width: 15rem;
+    margin: -8rem -15rem 14rem 4rem;
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 2rem;
+    border-radius: 30px; 
+}
+
+/* FORM */
+.box {
+    max-width: 50%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    height: 720px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-box h2 {
+    margin-top: -1rem;
+}
+
+form .input-group {
+    margin-bottom: 10px;
+}
+
+form .input-group label {
+    color: #3D3D3D;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+form .input-group input {
+    width: 100%;
+    height: 47px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus {
+    border-color: #92b4ff;
+}
+
+form .input-group button {
+    width: 80%;
+    height: 47px;
+    background: #ffffff;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.form-box_login {
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 500px;
+    height: 350px;
+    margin: 13rem 0rem 17rem 0rem;
+}
+/* FIM DO FORM */
+
+/* FIM DO MAIN */
+
+
+
+/* INÍCIO DO FOOTER */
+footer {
+    position: relative;
+    margin: -4rem 0rem 0rem 0rem ;
+    display: block;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+/* FIM DO FOOTER */
+
+
+
+

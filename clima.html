@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css_clima.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- <h1>Previsão do Tempo - Mogi das Cruzes</h1>
+    <p id="temperatura">Carrregando...</p>
+
+    <label>LOCAL DE BUSCA</label><br>
+    <input type="text" id="local" placeholder="Digite o local..." autocomplete="off">
+    <button onclick="getWeather()">Buscar</button> -->
+
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Consumindo API's - João Marcelo </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    API's Desenvolvidas
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="apis.html">API CEP / DÓLAR</a></li>
+                    <li><a class="dropdown-item" href="api_fake.html">API FAKE</a></li>
+                    <li><a class="dropdown-item" href="form.html">API FORM</a></li>
+                    <li><a class="dropdown-item" href="clima.html">API CLIMA</a></li>
+                    <li><a class="dropdown-item" href="json.html">API JSON</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="box">
+          <div class="form-box_login">
+              <h2>- Previsão do Tempo -</h2> <br>
+
+              <form action="#">
+
+                  <div class="input-group w50">
+                      <label class="texto">BUSQUE PELA SUA CIDADE</label><br>
+                      <input type="text" id="local" placeholder="Digite a sua cidade...">
+                  </div>
+
+                  <p id="temperatura">Carregando...</p><br>
+
+                  <div class="input-group">
+                      <button onclick="getWeather()">Buscar</button>
+                  </div>
+
+              </form>
+          </div>
+      </div>
+    </main>
+
+
+
+    
+</body>
+
+    <script>
+        //O código usa a biblioteca Axios para realizar uma requisição HTTP a API OpenWeatherMap para obter a previsão do tempo.
+
+        //Esta linha define a função assíncrona, isso significa que a função pode esperar por uma resposta da API.
+
+        async function getWeather() {
+            
+            //Nesta linha estamos fazendo uma chamada a API usando a biblioteca Axios. A URL inclui informações da localização (Mogi das Cruzes) e a unidade de medida (Celsius) e a chave da API (API-KEY).
+
+            var cidade = document.getElementById('local').value;
+
+            const response = await
+            //axios.get('https://api.openweathermap.org/data/2.5/weather?q=Mogi%20das%20Cruzes&units=metric&appid=64ed82577ced7f69cb1687f0ce536131');
+
+            axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`);
+
+            //Aqui estamos extraindo a temperatura atual (Celsius) da resposta de API e armazenando na variável tempCelsius.
+            const tempCelsius = response.data.main.temp;
+
+            //Exibir o valor.
+            document.querySelector ('#temperatura').innerHTML = `A temperatura atual em ${cidade} é de <b>${tempCelsius}°C</b>`;
+
+        }
+
+        //Chamando a função getWeather para iniciar a consulta a API.
+        getWeather();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</html>

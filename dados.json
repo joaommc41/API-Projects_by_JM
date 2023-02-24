@@ -1,0 +1,28 @@
+{
+    "rock": {
+        "name": "Carpenters",
+        "album": "Close to You",
+        "records": "(A&M Records - 1970)",
+        "style": "LP - Soft Rock - Conservado",
+        "price": "R$200,00",
+        "image": "<img src='img_json/carpenters.jfif' width='200px'>"
+    },
+
+    "rock1": {
+        "name": "Diana Ross and Marvin Gaye",
+        "album": "Diana & Marvin",
+        "records": "(Motown Records - 1973)",
+        "style": "LP - Soul - Conservado",
+        "price": "R$180,00",
+        "image": "<img src='img_json/diana&marvin.jfif' width='200px'>"
+    },
+
+    "rock2": {
+        "name": "Elvis Presley",
+        "album": "Moody Blue",
+        "records": "(RCA Records Label - 1977)",
+        "style": "LP - Rock - Conservado",
+        "price": "R$250,00",
+        "image": "<img src='img_json/elvis.webp' width='200px'>"
+    }
+}

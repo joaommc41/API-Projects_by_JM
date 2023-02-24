@@ -1,0 +1,120 @@
+body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/c3464031490423.56a09f05c0a54.jpg);
+  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-position: center;
+  background-position: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-clip: content-box;
+  background-blend-mode: darken;
+}
+.navbar-brand {
+  margin-left: 2rem;
+}
+
+.buttons {
+  margin: 0 auto;
+  margin-top: 30px;
+
+  /* Notebook 15.6" */
+  /* margin-top: 35px;  */
+
+  margin-left: 27rem;
+
+  /* Tela cheia */
+  /* margin-top: 50px; */
+
+  /* Notebook 15.6" */
+  /* margin-left: 18rem; */
+  
+  align-items: center;
+  text-align: center;
+  display: inline-flex;
+}
+
+.atualizar {
+  margin-left: 7rem;
+  display: inline-flex;
+}
+
+.dados {
+  margin: 6.5rem 0rem 0rem 26rem;
+
+  /* Notebook 15.6" */
+  /* margin: 4rem 0rem 0rem 17.5rem; */
+  font-size: 17px;
+
+  font-family: cursive;
+  font-style: oblique;
+}
+
+.dados,
+div,
+img {
+  border-radius: 50px;
+}
+
+img {
+  margin-top: 9.5rem;
+}
+
+iframe {
+  margin-top: 8.5rem;
+
+  /* Notebook 15.6" */
+  /* margin-top: 5rem; */
+}
+
+.container {
+  display: inline-flex;
+  margin-top: 10px;
+
+  /* Tela cheia */
+  /* margin-top: 40px; */
+}
+
+.imgpq {
+  display: inline-flex;
+  margin: -2.5rem 0rem 0rem -2.5rem;
+
+  /* margin: -2.5rem 0rem 0rem -0.5rem; */
+
+  /* Notebook 15.6" */
+  /* margin: -4rem 0rem 0rem -2.8rem; */
+}
+
+@media (min-width: 1900px) {
+
+  .buttons {
+    margin-top: 40px;
+  }
+
+  .container {
+    margin-top: -10px;
+  }
+   
+  .imgpq {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+
+/* @media (min-width: 1500px) {
+
+  .buttons {
+    margin-top: 35px;
+    margin-left: 17.6rem;
+  } 
+
+  .dados {
+    margin: 4rem 0rem 0rem 17.5rem; 
+  }
+
+  iframe {
+    margin-top: 5rem;
+  }
+  
+  .imgpq {
+    margin: -4rem 0rem 0rem -2.8rem;
+  }
+} */

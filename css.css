@@ -1,0 +1,16 @@
+body {
+    background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Free-HD-Gif-Wallpapers.gif');
+    background-repeat: no-repeat;
+    background-color: #b3c5e0;
+    background-repeat: repeat;
+    background-position: center;
+    background-position: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    background-blend-mode: darken;
+}
+
+.navbar-brand {
+    margin-left: 2rem;
+}
